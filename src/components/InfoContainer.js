@@ -15,7 +15,7 @@ const InfoContainer = () => {
   `
 
   const BlueText = styled.h2`
-    font-family: 'Arial';
+    font-family: brandon-grotesque, sans-serif;
     color: #439CF6;
   `
 
