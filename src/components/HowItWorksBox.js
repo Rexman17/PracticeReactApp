@@ -40,7 +40,7 @@ class HowItWorksBox extends React.Component {
             HOW IT WORKS
           </Title>
           <div onClick={this.handleClick}
-            className={"fa fa-angle-down"}
+            className={this.state.topClicked ? "fa fa-angle-up" : "fa fa-angle-down"}
             style={{paddingLeft: "10em", fontSize: "36px"}}>
           </div>
         </FlexContainer>

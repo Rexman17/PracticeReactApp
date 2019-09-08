@@ -40,7 +40,7 @@ class LearnMore extends React.Component {
             LEARN MORE
           </Title>
           <div onClick={this.handleClick}
-            className={"fa fa-angle-down"}
+            className={this.state.bottomClicked ? "fa fa-angle-up" : "fa fa-angle-down"}
             style={{paddingLeft: "10.5em", fontSize: "36px"}}>
           </div>
         </FlexContainer>
