@@ -21,6 +21,18 @@ const InfoContainer = () => {
     color: #439CF6;
   `
 
+  const AddToCart = styled.button`
+    background: #E54444;
+    border-radius: 6px;
+    margin-top: 3em;
+    padding: 1em;
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+  `
+
   return (
     <InfoDiv>
       <Title>Mystery Item    |    $5</Title>
@@ -29,6 +41,7 @@ const InfoContainer = () => {
         <HowItWorksBox />
         <LearnMore />
       </div>
+      <AddToCart>Add To Cart</AddToCart>
     </InfoDiv>
   )
 }

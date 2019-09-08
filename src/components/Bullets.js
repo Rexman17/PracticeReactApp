@@ -25,6 +25,8 @@ const Bullets = (props) => {
         :
       <Fragment>
         <ListItem>Nice try! But the mystery won’t be revealed until you open your box</ListItem>
+        <strong>Have any other questions?</strong>
+        Call 888 212 6855 or Email help@harrys.com
       </Fragment>
     }
 
