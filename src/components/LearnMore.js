@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import Bullets from './Bullets';
 
-const HowItWorksDiv = styled.div`
+const LearnMoreDiv = styled.div`
   background: white;
   border-radius: 5px;
-  margin-top: 3em;
+  margin-top: 0.1em;
   padding: 1em;
 `
 
@@ -20,35 +20,35 @@ const FlexContainer = styled.div`
   flex-direction: row;
 `
 
-class HowItWorksBox extends React.Component {
+class LearnMore extends React.Component {
 
   state = {
-    topClicked: false,
-    top: "top"
+    bottomClicked: false,
+    bottom: "bottom"
   }
 
   handleClick = e => {
-    this.setState({ topClicked: !this.state.topClicked })
+    this.setState({ bottomClicked: !this.state.bottomClicked })
   }
 
   render() {
 
     return (
-      <HowItWorksDiv>
+      <LearnMoreDiv>
         <FlexContainer>
           <Title>
-            HOW IT WORKS
+            LEARN MORE
           </Title>
           <div onClick={this.handleClick}
             className={"fa fa-angle-down"}
-            style={{paddingLeft: "10em", fontSize: "36px"}}>
+            style={{paddingLeft: "10.5em", fontSize: "36px"}}>
           </div>
         </FlexContainer>
-          { this.state.topClicked ? <Bullets which={this.state.top}/> : null }
-      </HowItWorksDiv>
+          { this.state.bottomClicked ? <Bullets which={this.state.bottom}/> : null }
+      </LearnMoreDiv>
     )
   }
 
 }
 
-export default HowItWorksBox;
+export default LearnMore;

@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import HowItWorksBox from './HowItWorksBox'
+import LearnMore from './LearnMore'
+
 
 const InfoContainer = () => {
 
@@ -23,7 +25,10 @@ const InfoContainer = () => {
     <InfoDiv>
       <Title>Mystery Item    |    $5</Title>
       <BlueText>We won't ruin a good surprise.</BlueText>
-      <HowItWorksBox />
+      <div id="flex">
+        <HowItWorksBox />
+        <LearnMore />
+      </div>
     </InfoDiv>
   )
 }
